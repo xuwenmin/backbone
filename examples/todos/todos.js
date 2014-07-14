@@ -21,6 +21,10 @@ $(function(){
       };
     },
 
+    initialize: function(){
+        console.log(arguments);
+    },
+
     // Toggle the `done` state of this todo item.
     toggle: function() {
       this.save({done: !this.get("done")});
